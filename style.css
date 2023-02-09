@@ -1,49 +1,61 @@
-/* Add your CSS styles here */
 body {
-  background-color: #33CC33;
+  background-color: #FFFFFF;
+  font-family: Arial, sans-serif;
+}
+.header {
+  background-color: #7E57C2;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.header h1 {
+  margin: 0;
+}
+.header nav {
+  display: flex;
+}
+.header nav a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 20px;
+}
+.header nav a:hover {
+  text-decoration: underline;
 }
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
 }
-.title {
-  font-size: 36px;
-  margin-bottom: 20px;
-  color: white;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-}
-.form-group {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container h2 {
   margin-bottom: 20px;
 }
-label {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: white;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
+.container form {
+  background-color: #F5F5F5;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #BBBBBB;
 }
-input[type="text"], input[type="number"] {
+.container form input[type="text"],
+.container form input[type="email"],
+.container form input[type="number"] {
+  width: 100%;
   padding: 10px;
-  font-size: 16px;
+  margin-bottom: 20px;
   border-radius: 5px;
-  border: 1px solid #ccc;
-  color: white;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
+  border: none;
+  box-shadow: 0px 0px 5px #BBBBBB;
 }
-input[type="submit"] {
+.container form input[type="submit"] {
+  background-color: #7E57C2;
+  color: #FFFFFF;
   padding: 10px 20px;
-  background-color: #333;
-  color: #fff;
   border-radius: 5px;
-  font-size: 16px;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.container form input[type="submit"]:hover {
+  background-color: #6D3F9E;
 }
