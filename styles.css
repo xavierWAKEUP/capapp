@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Trade Winds', cursive;
+}
+
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.top-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: 'Trade Winds', cursive;
+    font-size: 24px;
+    color: green;
+}
+
+.centered-text {
+    color: green;
+}
+
+input[type="text"],
+button {
+    margin: 10px;
+    padding: 5px;
+    font-family: 'Trade Winds', cursive;
+}
+
+button {
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#verificationResult {
+    font-family: 'Trade Winds', cursive;
+    color: green;
+}
