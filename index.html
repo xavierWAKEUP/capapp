@@ -1,28 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Money App</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puff Product Verification</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="header">
-    <h1>Money App</h1>
-    <nav>
-      <a href="#">Receive Money</a>
-      <a href="#">Send Money</a>
-      <a href="#">Settings</a>
-    </nav>
-  </header>
-  <div class="container">
-    <h2>Send Money</h2>
-    <form>
-      <input type="text" placeholder="Recipient Name">
-      <input type="email" placeholder="Recipient Email">
-      <input type="number" placeholder="Amount">
-      <input type="submit" value="Send Money">
-    </form>
-  </div>
+    <h1>Puff Product Verification</h1>
+    <p>Enter your code:</p>
+    <input type="text" id="verificationCode" placeholder="Enter code">
+    <button id="verifyButton">Verify</button>
+    <p id="verificationResult"></p>
+
+    <script src="script.js"></script>
 </body>
 </html>
