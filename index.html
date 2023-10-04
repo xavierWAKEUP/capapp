@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Puff Product Verification</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #007f00; /* Green color */
+        }
+        #verificationResult {
+            color: #ff0000; /* Red color */
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="top-left">Zen Labs</div>
-        <h1 class="centered-text">Puff Product Verification</h1>
-        <p>Enter your code:</p>
-        <input type="text" id="verificationCode" placeholder="Enter code">
-        <button id="verifyButton">Verify</button>
-        <p id="verificationResult"></p>
-    </div>
+    <h1>Puff Product Verification</h1>
+    <p>Enter your code:</p>
+    <input type="text" id="verificationCode" placeholder="Enter code">
+    <button id="verifyButton">Verify</button>
+    <p id="verificationResult"></p>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("verifyButton").addEventListener("click", function() {
+            const enteredCode = document.getElementById("verificationCode").value;
+            
+            if (enteredCode === "1930074") {
+                document.getElementById("verificationResult").innerText = "Code is valid!";
+            } else {
+                document.getElementById("verificationResult").innerText = "Invalid Code, Please inform Dispensary";
+            }
+        });
+    </script>
 </body>
 </html>
